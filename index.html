@@ -6,11 +6,13 @@
   <title>Navbar Stride88</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
   <nav class="navbar">
-    <div class="nav-links" id="navLinks">
+    <div class="nav-links " id="navLinks">
       <a href="#">Home</a>
       <a href="#">Featured</a>
       <a href="#">Collection</a>
@@ -19,9 +21,9 @@
     </div>
 
     <div class="right-section">
-      <div class="logmem">
+      <div class="logmem ">
         <div class="logo">
-          <h2>Stride88</h2>
+          <h2 class="font-bold text-2xl ">Stride88</h2>
         </div>
         <div class="member">
           <span>Member Account</span>
@@ -41,8 +43,8 @@
     <div class="hero-container">
       <div class="hero-content">
         <h3 class="old-school">Old School Socks</h3>
-        <h1>Selamat Datang di Stride88</h1>
-        <p>Stride88 menghadirkan kaos kaki berkualitas tinggi, nyaman dipakai, stylish, dan tahan lama. Cocok untuk gaya sehari-hari maupun olahraga, dengan desain modern yang memanjakan kaki dan meningkatkan penampilan.</p>
+        <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Bayangin Kalau Bisa Punya Kaos Kaki Awet, Harga Cuma Setengahnya...</h1>
+        <p>Itulah yang kamu dapetin di Stride88. Kaos kaki sisa produksi kualitas ekspor, nyaman dipakai, harga hemat. Pilih sekarang sebelum kehabisan.</p>
         <a href="#" class="btn">
           Add to your cart
           <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Keranjang" class="btn-icon">
@@ -57,29 +59,55 @@
 
 
 
-  <!-- Section Baru: Produk -->
-<section class="produk">
-  <div class="produk-container">
-    <h2>Produk Unggulan</h2>
-    <div class="produk-grid">
-      <div class="produk-card">
-        <img src="produk1.jpg" alt="Produk 1">
-        <h3>Kaos Kaki Sport</h3>
-        <p>Nyaman dipakai untuk olahraga, breathable, dan tahan lama.</p>
+  <section class="py-20 bg-gray-200 text-gray-800">
+  <div class="container mx-auto px-6 text-center">
+    <!-- Judul -->
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-6">
+      Kenapa Kaos Kaki Stride88 Selalu Jadi Pilihan?
+    </h2>
+
+    <!-- Deskripsi -->
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+      Karena kami ambil langsung dari <span class="font-semibold">sisa produksi pabrik ekspor besar</span>. 
+      Hasilnya? Kaos kaki premium, harga super hemat, tanpa kompromi kualitas.
+    </p>
+
+    <!-- Fitur Produk -->
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <span class="text-4xl">✅</span>
+        <h3 class="text-xl font-bold mt-4 mb-2">Kualitas Ekspor</h3>
+        <p>Bahan nyaman, jahitan rapi, dan awet dipakai seharian.</p>
       </div>
-      <div class="produk-card">
-        <img src="produk2.jpg" alt="Produk 2">
-        <h3>Kaos Kaki Casual</h3>
-        <p>Desain stylish untuk aktivitas sehari-hari.</p>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <span class="text-4xl">💰</span>
+        <h3 class="text-xl font-bold mt-4 mb-2">Harga Hemat</h3>
+        <p>Mulai dari Rp9.900, lebih murah 50% dari pasaran.</p>
       </div>
-      <div class="produk-card">
-        <img src="produk3.jpg" alt="Produk 3">
-        <h3>Kaos Kaki Premium</h3>
-        <p>Bahan pilihan untuk kenyamanan maksimal sepanjang hari.</p>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition">
+        <span class="text-4xl">⚡</span>
+        <h3 class="text-xl font-bold mt-4 mb-2">Stok Terbatas</h3>
+        <p>Sisa produksi, kalau habis ya habis! Jangan sampai kehabisan.</p>
       </div>
+    </div>
+
+    <!-- Penutup -->
+    <p class="mt-12 text-lg md:text-xl max-w-2xl mx-auto">
+      Stride88 bukan sekadar kaos kaki murah, tapi pilihan cerdas buat kamu yang peduli kualitas <br> dan hemat uang.
+    </p>
+
+    <!-- CTA -->
+    <div class="mt-8">
+      <a href="https://wa.me/628xxxxxxx" target="_blank" 
+         class="px-8 py-4 bg-indigo-600 text-white font-bold rounded-2xl shadow-lg hover:bg-indigo-500 transition duration-300">
+        Lihat Koleksi Sekarang 👟
+      </a>
     </div>
   </div>
 </section>
+
 
   <script src="script.js"></script>
 </body>
